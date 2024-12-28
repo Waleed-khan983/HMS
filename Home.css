@@ -1,0 +1,291 @@
+ /* Reset and General Styles */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Arial, sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 10px 20px;
+   background-color: #212529;
+   color: white;
+   
+}
+
+.navbar .logo {
+   height: 50px;
+   border-radius: 50%;
+}
+
+.navbar h2 {
+   font-size: 1.5rem;
+   margin-left: 10px;
+   color: #f2a365;
+}
+
+.navbar ul {
+   list-style: none;
+   display: flex;
+   gap: 20px;
+}
+
+.navbar ul li a {
+   text-decoration: none;
+   color: white;
+   font-size: 1rem;
+   transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+   color: #f2a365;
+}
+
+.menu-icon {
+   display: none;
+   font-size: 1.5rem;
+   cursor: pointer;
+   color: white;
+}
+
+/* Sidebar Styling */
+.sidebar {
+   width: 250px;
+   height: 100vh;
+   background-color:#343a40;
+   color: white;
+   position: fixed;
+   padding: 20px;
+
+}
+
+.sidebar h2 {
+   font-size: 1.5rem;
+   margin-bottom: 20px;
+   color: #f2a365;
+}
+
+.sidebar ul {
+   list-style: none;
+}
+
+.sidebar ul li a {
+   display: flex;
+   align-items: center;
+   text-decoration: none;
+   color: white;
+   padding: 10px 0;
+   transition: background 0.3s ease, color 0.3s ease;
+}
+
+.sidebar ul li a i {
+   margin-right: 10px;
+}
+
+.sidebar ul li a:hover {
+   background-color: #f2a365;
+   color: #333;
+   border-radius: 5px;
+}
+
+/* Main Content Styling */
+.main-content {
+   margin-left: 270px;
+   padding: 20px;
+   background-color: #f8f9fa;
+   min-height: 100vh;
+   color: #212529;
+}
+
+.main-content h1 {
+   color: #333;
+   font-size: 2rem;
+   margin-bottom: 20px;
+}
+/* css for the welcome note */
+/* Welcome Note Styles */
+.welcome-note {
+   text-align: center;
+   margin: 20px 0;
+   padding: 20px;
+   background: linear-gradient(45deg, #f2a365, #ffdd99);
+   color: #333;
+   border-radius: 10px;
+   animation: fadeInUp 2s ease-out;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-note h1 {
+   font-size: 2.5rem;
+   margin-bottom: 10px;
+   animation: slideInFromLeft 1.5s ease-out;
+}
+
+.welcome-note p {
+   font-size: 1.2rem;
+   animation: slideInFromRight 1.5s ease-out;
+}
+
+/* Keyframes for Animation */
+@keyframes fadeInUp {
+   from {
+       opacity: 0;
+       transform: translateY(50px);
+   }
+   to {
+       opacity: 1;
+       transform: translateY(0);
+   }
+}
+
+@keyframes slideInFromLeft {
+   from {
+       opacity: 0;
+       transform: translateX(-50px);
+   }
+   to {
+       opacity: 1;
+       transform: translateX(0);
+   }
+}
+
+@keyframes slideInFromRight {
+   from {
+       opacity: 0;
+       transform: translateX(50px);
+   }
+   to {
+       opacity: 1;
+       transform: translateX(0);
+   }
+}
+
+
+.city-images {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+
+.city {
+   width: calc(33.333% - 20px);
+   background-color: white;
+   border: 1px solid #ddd;
+   border-radius: 10px;
+   overflow: hidden;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* .city img {
+   width: 100%;
+   height: 200px;
+   object-fit: cover;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+} */
+.city img {
+   width: 100%;
+   height: 200px;
+   object-fit: cover;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.city img:hover {
+   transform: scale(1.05); /* Slight zoom effect */
+   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+}
+
+ 
+
+.city p {
+   padding: 10px;
+   font-size: 1rem;
+   text-align: center;
+}
+
+/* Footer Styling */
+.footer {
+   background-color: #333;
+   color: white;
+   padding: 20px;
+   text-align: center;
+}
+
+.footer img {
+   height: 40px;
+   margin-bottom: 10px;
+}
+
+.footer h2 {
+   color: #f2a365;
+}
+
+.footer ul {
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   margin-top: 10px;
+}
+
+.footer ul li a {
+   text-decoration: none;
+   color: white;
+   font-size: 1rem;
+   transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+   color: #f2a365;
+}
+
+footer {
+   margin-top: 10px;
+   font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+   .menu-icon {
+       display: block;
+   }
+
+   .navbar ul {
+       display: none;
+       flex-direction: column;
+       background-color: #333;
+       position: absolute;
+       top: 60px;
+       right: 10px;
+       width: 200px;
+       border-radius: 5px;
+   }
+   .navbar ul li{
+      text-align: center;
+   }
+
+   .navbar ul.active {
+       display: flex;
+   }
+
+   .main-content {
+       margin-left: 0;
+   }
+
+   .city {
+       width: calc(50% - 20px);
+   }
+}
+
+@media (max-width: 480px) {
+   .city {
+       width: 100%;
+   }
+
+   .navbar ul li {
+       text-align: center;
+   }
+}

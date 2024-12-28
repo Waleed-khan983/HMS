@@ -1,0 +1,135 @@
+ /* General Styling */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+.header {
+    background-color: #2a2f4f;
+    color: white;
+    padding: 10px 0;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+}
+
+.logo span {
+    color: #e63946;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #e63946;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero span {
+    color: #e63946;
+}
+
+/* Section Styling */
+main section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.about, .mission, .visit {
+    background: #f9f9f9;
+    margin: 20px 0;
+    border-radius: 10px;
+    padding: 20px;
+    animation: slideIn 1s ease-in-out;
+}
+
+.about h2, .mission h2, .visit h2 {
+    font-size: 2rem;
+    color: #2a2f4f;
+    margin-bottom: 20px;
+}
+
+/* Address Styling */
+address {
+    font-style: normal;
+    line-height: 1.8;
+    color: #555;
+}
+
+address a {
+    color: #e63946;
+    text-decoration: none;
+}
+
+address a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #2a2f4f;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
